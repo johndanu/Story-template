@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet" />
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+  <style media="screen">
+    body {
+      background-image: url("../src/img/background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: serif;
+    }
+
+    .borderu {
+      border-bottom: 2px solid white;
+      border-radius: 3px;
+      width: 90%;
+    }
+    .tamil-meaning{
+        cursor: pointer;
+    }
+    .links {
+      color: rgb(255, 255, 255);
+    }
+    .meaning-btn{
+        border: 0;
+        background: none;
+    }
+    .meaning-btn:hover{
+        color:#020222;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar align-items-center justify-content-center navbar-expand-lg navbar-dark default-color">
+    <ul class="align-items-center justify-content-center navbar-nav borderu">
+      <li class="nav-item active d-flex text-center">
+        <a class="links mx-4" href="#">
+          <h1><i class="fas fa-angle-left"></i></h1>
+        </a>
+        <a class="links mx-4" href="#">
+          <h1> <i class="fas fa-home"></i></h1>
+        </a>
+        <a class="links mx-4" href="#">
+          <h1>Story</h1>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <blockquote class="blockquote bq-success mt-2 z-depth-1-half">
+      <span class="bq-title">Crow and Fox</span>
+      <hr>
+      <!-- story starts here -->
+      <p class="h4">
+        <span data-toggle="modal" data-target="#rich" class="tamil-meaning">பணக்காரர்</span> ஒருவர் கோவில்  ஒன்று கட்டினார்.<button class="btn-floating btn-lg btn-outline-success btn-rounded waves-effect m-1"
+        onclick="document.getElementById('SE1').play()"><i class="fas fa-volume-up"></i></button>
+      </p>
+      <!-- Story Ends here -->
+      <button class="btn-floating btn-lg btn-outline-success btn-rounded waves-effect m-1"
+          onclick="document.getElementById('SE-full').play()">Listen to the full story <i class="fas fa-volume-up"></i></button>
+    </blockquote>
+
+    <!-- Models here -->
+
+    <div class="modal" id="rich">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div align="right">
+          <button type="button" class="btn-sm meaning-btn" class="close" data-dismiss="modal">&times;</button>
+          </div>
+            <!-- Modal body -->
+            <h1 class="modal-body" align="center">
+             Richman
+            </h1>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Models end here -->
+
+
+    <!-- Audio Starts here -->
+
+    <audio class="embed-responsive" id="SE1">
+      <source src="../../src/audio/SE-story/SE1.wav">
+    </audio>
+    <audio class="embed-responsive" id="SE-full">
+      <source src="../../src/audio/SE-story/SE-full.wav">
+    </audio>
+
+    <!-- Audio ends here -->
+  </div>
+</body>
+
+</html>
